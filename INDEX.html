@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Web Cart</title>
+</head>
+
+<body>
+    <div class="header-nav">
+        <header class="header">
+            <h1>Webcart</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="special-offer">
+            <div class="offer-text">
+                <h5>Special Offer</h5>
+                <h1>Up To 50% Off</h1>
+                <p>Limited time offer on selected items. <br> Hurry up and grab the best deals!</p>
+                <button id="special-shop">
+                    <p> Shop the Sale</p>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </button>
+            </div>
+            <div class="sale-img">
+                <img id="sale-img" src="images/sale.png">
+            </div>
+        </div>
+        <div class="services">
+            <div class="servicing">
+                <div class="servicing-icon">
+                    <i class="fa-solid fa-truck truck"></i>
+                </div>
+                <p><span class="service-title"> Free Shipping </span> <br> On orders over $50</p>
+            </div>
+            <div class="servicing">
+                <div class="servicing-icon">
+                    <i class="fa-solid fa-credit-card credit"></i>
+                </div>
+                <p><span class="service-title">Secure Payment</span><br> 100% secure payment</p>
+            </div>
+            <div class="servicing">
+                <div class="servicing-icon">
+                    <i class="fa-solid fa-arrow-rotate-left arrow-return"></i>
+                </div>
+                <p><span class="service-title">Easy Returns</span><br>30 days return policy</p>
+            </div>
+            <div class="servicing">
+                <div class="servicing-icon">
+                    <i class="fa-solid fa-headset headset"></i>
+                </div>
+                <p><span class="service-title">24/7 Support</span><br>Dedicated support</p>
+            </div>
+        </div>
+        <div class="shop-by-categories">
+            <h2>Shop by Categories</h2>
+            <button>
+                <h5>View All Categories</h5>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </button>
+        </div>
+        <div class="categories">
+            <div class="category-button">
+                <button id="headphone">
+                    <img src="images/headphones.png">
+                </button>
+                <h5>Electronics</h5>
+            </div>
+            <div class="category-button">
+                <button id="t-shirt">
+                    <img src="images/t shirt.png">
+                </button>
+                <h5>Fashion</h5>
+            </div>
+            <div class="category-button">
+                <button id="sofa">
+                    <img src="images/sofa.png">
+                </button>
+                <h5>Home & Kitchen</h5>
+            </div>
+            <div class="category-button">
+                <button id="perfume">
+                    <img src="images/perfume.png">
+                </button>
+                <h5>Beauty</h5>
+            </div>
+            <div class="category-button">
+                <button id="shoe">
+                    <img src="images/shoe.png">
+                </button>
+                <h5>Sports</h5>
+            </div>
+            <div class="category-button">
+                <button id="watch">
+                    <img src="images/watch.png">
+                </button>
+                <h5>Accessories</h5>
+            </div>
+        </div>
+        <div class="best-selling-products">
+            <h2>Best Selling Products</h2>
+            <button>
+                <h5>View All Products</h5>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+            </button>
+        </div>
+        <div class="best-products">
+            <div id="best-watch" class="product-card">
+
+                <div id="best-watch-image">
+                    <img src="images/bestwatch.png" alt="Smart Watch Series 5">
+                    <button class="fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div id="best-watch-details">
+                    <h3>Smart Watch Series 5</h3>
+
+                    <div class="rating-row">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="rating">4.5</span>
+                        <span class="review-count">(128)</span>
+                    </div>
+
+                    <div class="price-row">
+                        <span class="new-price">$89.99</span>
+                        <del class="old-price">$129.99</del>
+                    </div>
+
+                    <button class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="product-card best-headphones">
+                <div id="best-headphones-img" class="product-image-box">
+                    <img src="images/wireless headphones.png" alt="Wireless Headphones">
+                    <button class="fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div id="best-headphones-details" class="product-details-box">
+                    <h3>Wireless Headphones</h3>
+                    <div class="rating-row">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="rating">4.7</span>
+                        <span class="review-count">(98)</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="new-price">$59.99</span>
+                        <del class="old-price">$89.99</del>
+                    </div>
+                    <button class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card best-backpack">
+                <div id="best-backpack-img" class="product-image-box">
+                    <img src="images/backpack.png" alt="Travel Backpack">
+                    <button class="fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div id="best-backpack-details" class="product-details-box">
+                    <h3>Travel Backpack</h3>
+                    <div class="rating-row">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="rating">4.6</span>
+                        <span class="review-count">(156)</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="new-price">$39.99</span>
+                        <del class="old-price">$69.99</del>
+                    </div>
+                    <button class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card best-shoes">
+                <div id="best-shoes-img" class="product-image-box">
+                    <img src="images/sports shoes.png" alt="Running Shoes">
+                    <button class="fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div id="best-shoes-details" class="product-details-box">
+                    <h3>Running Shoes</h3>
+                    <div class="rating-row">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="rating">4.4</span>
+                        <span class="review-count">(78)</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="new-price">$49.99</span>
+                        <del class="old-price">$79.99</del>
+                    </div>
+                    <button class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card best-perfume">
+                <div id="best-perfume-img" class="product-image-box">
+                    <img src="images/luxury perfume.png" alt="Luxury Perfume">
+                    <button class="fav">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div id="best-perfume-details" class="product-details-box">
+                    <h3>Luxury Perfume</h3>
+                    <div class="rating-row">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="rating">4.8</span>
+                        <span class="review-count">(64)</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="new-price">$29.99</span>
+                        <del class="old-price">$49.99</del>
+                    </div>
+                    <button class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <h2 id="customer">What Our Customers say</h2>
+        <div class="comments">
+            <div id="comment1">
+                <i class="fa-solid fa-quote-left quotes"></i>
+                <p>Amazing products and fast delivery! WebCart is my go-to store for all my needs.</p>
+                <i class="fa-solid fa-circle-user"></i>
+                <span class="commenter">John D.</span>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div id="comment2">
+                <i class="fa-solid fa-quote-left quotes"></i>
+                <p>Great quality at affordable prices. The customer support is also very responsive.</p>
+                <i class="fa-solid fa-circle-user"></i>
+                <span class="commenter">Sarah M.</span>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div id="comment3">
+                <i class="fa-solid fa-quote-left quotes"></i>
+                <p>Very happy with my purchase. Highly recommend WebCart to everyone!</p>
+                <i class="fa-solid fa-circle-user"></i>
+                <span class="commenter">Michael T.</span>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-webcart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h2>WebCart</h2>
+                <p>Your one-stop shop for quality <br> products at the best prices</p>
+            </div>
+            <div class="footer-quick-links">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-customer-service">
+                <h3>Customer Service</h3>
+                <ul class="footer-services">
+                    <li><a href="">Track Order</a></li>
+                    <li><a href="">Returns & Refunds</a></li>
+                    <li><a href="">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Subscribe to our newsletter</h3>
+                <p>Get the latest updates on our products <br> and upcoming sale</p>
+                <div class="subscribe">
+                    <input type="text" placeholder="Enter your Email">
+                    <button>
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- ==========================================================
+     🛒 3-PART CART COLLISION ANIMATION WIDGET
+     ========================================================== -->
+
+<!-- 1. The Bouncing Ball -->
+<div id="ball" class="fixed-cart-widget"></div>
+
+<!-- 2. The Right Target Cart (Displays current count X) -->
+<div id="right-cart" class="fixed-cart-widget">
+  <i class="fa-solid fa-cart-shopping"></i>
+  Cart (<span id="right-count">0</span>)
+</div>
+
+<!-- 3. The Main Left Cart (Clickable Button - Displays updated count X+1) -->
+<button id="left-cart" class="fixed-cart-widget" type="button">
+  <i class="fa-solid fa-cart-shopping"></i>
+  Cart (<span id="left-count">0</span>)
+</button>
+    <script src="MAIN.js"></script>
+</body>
+
+</html>
